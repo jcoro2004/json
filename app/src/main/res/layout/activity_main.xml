@@ -1,12 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    android:padding="16dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioTechCrunch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TechCrunch" />
+
+        <RadioButton
+            android:id="@+id/radioAyudaWP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AyudaWP" />
+
+        <RadioButton
+            android:id="@+id/radioJavaProgrammer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Java Programmer" />
+    </RadioGroup>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:paddingTop="16dp" />
 </LinearLayout>
